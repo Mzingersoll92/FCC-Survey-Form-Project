@@ -1,0 +1,76 @@
+<style>
+  header{
+    text-align: center;
+  }
+  body{
+    background-color: #99c2ff;
+    border: ;
+  }
+  form {
+    text-align: center;
+    position: static;
+  }
+  div {
+    padding: ;
+  }
+  .grid-container{
+    display: grid;
+   justify-content: space-evenly;
+  }
+
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+  <header>
+  <h1 id="title">Survey Form</h1>
+  </header>
+  <body>
+    <form id="survey-form" class="grid-container">
+      <p id="description">This survey is to help better our FCC website</p>
+      <label id="name-label">*Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    <br>
+      <label id="email-label">*Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+  <br>
+      <label id="number-label">*Age:</label>
+    <input type="number" id="number" name="age" min="1" max="5" placeholder="Age" required>
+      <br>
+      <label id="number-label">How would you rate the performance of this hero.</label>
+      <select id="dropdown">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+      </select>
+<br>
+      <p>How likely is that you would recommend freeCodeCamp to a friend?</p>
+      <input type="radio" name="radio-button" value="radio">
+      <label>Definitely</label>
+      <br>
+      <input type="radio" name="radio-button" value="radio">
+      <label>Maybe</label>
+      <br>
+      <input type="radio" name="radio-button" value="radio">
+      <label>Not sure</label>
+      <br>
+      <p>Things that should be improved in the future</p>
+      <label>
+        <input id="check" type="checkbox" name="" value="check">
+        <label>Front-End Projects</label>
+        <br>
+        <input id="check" type="checkbox" name="" value="check">
+        <label>Back-End Projects</label>
+        <br>
+        <input id="check" type="checkbox" name="" value="check">
+        <label>Data Visualization</label>
+      <br>
+        <p>Any comments or suggestions?</p>
+      <textarea id="subject" name="subject" placeholder="Write a comment.." style="height:150px"></textarea>
+      <br>
+        <button type="submit" id="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>
